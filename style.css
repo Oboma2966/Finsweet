@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 15px 10px;
+}
+
+header .logo {
+    font-size: 15px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    border-right: 1px solid gray;
+    padding: 5px 20px 5px 0px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav .right-assist{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+nav .right-assist .righ-assist-text p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* main styling */
+
+main {
+    height: 89vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container {
+    height: 80%;
+    width: 100%;
+    display: flex;
+}
+
+main .container .left-text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 90px;
+}
+
+main .container .left-text h1 {
+    width: 580px;
+    font-size: 64px;
+    font-family: Manrope;
+    top: 250px;
+    left: 320px;
+    right: 0;
+    height: 250px;
+}
+
+button {
+    width: 200px;
+    height: 60px;
+    top: 80px;
+    left: 320px;
+    border-radius: 12px;
+    padding: 16px 32px 16px 32px;
+    gap: 10px;
+    background-color: rgba(255, 100, 51, 1);
+    color: rgba(255, 255, 255, 1);
+    font-family: Manrope;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+main .container .right-image {
+    width: 50%;
+    height: 100%;    
+    background-image: url(../Image/Image.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; 
+}
+
+main .container .right-image .service {
+    position: absolute;
+    left: -20%;
+    top: 0;
+}
+
+main .container .right-image .rating {
+    position: absolute;
+    right: -20%;
+    bottom: 0;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding-top: 20px;
+    justify-content: flex-start;
+    width: 374.98px;
+}
+
+.time .time-text{
+    font-size: 18px;
+    line-height: 31.5px;
+    color: rgba(30, 27, 27, 1);
+    width: 331px;
+    font-weight: 600;
+}
+
+.time .time-text .open {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(147, 145, 145, 1);
+    width: 93px;
+}

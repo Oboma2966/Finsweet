@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+headeer{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    border-right: 1px solid gray;
+    padding-right: 20px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav .right-assist{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+nav .right-assist .righ-assist-text{
+    font-size: 16px;
+    line-height: 24px;
+}
