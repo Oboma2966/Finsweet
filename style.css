@@ -1,16 +1,23 @@
+/* <style>@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');</style> */
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
 }
 
 header{
+    
     width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
     padding: 15px 10px;
+    position: fixed;
+    right: 10%;
+    background-color: #fff;
+    z-index: 50;
 }
 
 header .logo {
@@ -33,6 +40,7 @@ nav ul{
 
 nav ul li{
     list-style: none;
+    font-family: 'Playfair Display', serif;
 }
 
 nav .right-assist{
@@ -41,16 +49,26 @@ nav .right-assist{
     column-gap: 10px;
 }
 
+nav .right-assist .right-assist-icon {
+    background-color: #61C3A1;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 nav .right-assist .righ-assist-text p {
     font-size: 16px;
     line-height: 24px;
 }
 
-/* main styling */
+/* global styling */
 
-main {
-    height: 89vh;
-    width: 80%;
+.parent-flex {
+    height: 100vh;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -58,49 +76,82 @@ main {
     justify-content: center;
 }
 
-main .container {
+.container {
     height: 80%;
-    width: 100%;
+    width: 80%;
     display: flex;
 }
 
-main .container .left-text {
+.left {
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 90px;
+    /* margin-right: 90px; */
+    /* background-color: aquamarine; */
 }
 
+.right {
+    width: 50%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: bisque; */
+}
+
+.left-service {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+/* end of global styling */
+
+/* main styling */
+
 main .container .left-text h1 {
-    width: 580px;
-    font-size: 64px;
+    width: 97%;
     font-family: Manrope;
     top: 250px;
     left: 320px;
     right: 0;
     height: 250px;
+    font-size: 55px;
 }
 
 button {
-    width: 200px;
-    height: 60px;
+    width: 170px;
+    height: 50px;
     top: 80px;
     left: 320px;
-    border-radius: 12px;
-    padding: 16px 32px 16px 32px;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 6px 15px;
     gap: 10px;
-    background-color: rgba(255, 100, 51, 1);
+    background-color: #ff6433;
     color: rgba(255, 255, 255, 1);
     font-family: Manrope;
     font-weight: 600;
     font-size: 18px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+button:hover {
+    background-color: #a82a04;
+    border-radius: 35%;
+    transform: scale(0.8);
 }
 
 main .container .right-image {
-    width: 50%;
-    height: 100%;    
+    /* width: 50%;
+    height: 100%;     */
     background-image: url(./Image/Image.png);
     background-position: center;
     background-size: cover;
@@ -141,5 +192,229 @@ main .container .right-image .rating {
     font-size: 16px;
     line-height: 24px;
     color: rgba(147, 145, 145, 1);
-    width: 93px;
+    /* width: 93px; */
 }
+
+/* car servicing  section */
+.car-service {
+    background-color: rgba(226, 230, 233, 1);
+} 
+
+.left-service {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-service .left-right-service p {
+    margin-right: 30px;
+}
+
+.left-service .know-more-service {
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.fa-gear {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-user-nurse {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-dollar-sign {
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form section */
+.right .right-form {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+select {
+    width: 100%;
+    height: 50px;
+    appearance: none;
+    padding: 0 30px 0 15px;
+    border: none;
+    margin-top: 3px;
+}
+
+button .btn {
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: none;
+    background-color:rgba(255, 100, 51, 1);
+    color: white;
+}
+
+/* Quote Section */
+.left-left-quote-section {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.left-left-quote-section h1 {
+    font-size: 50px;
+    line-height: 76px;
+    font-weight: 800;
+}
+
+.left-left-quote-section p {
+    font-size: 13px;
+    line-height: 28px;
+}
+
+.right-right-quote-section p {
+    margin-right: 40px;
+    font-size: 16px;
+}
+
+.quote-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.number-image {
+    height: 42px;
+    width: 42px;
+    top: 1952px;
+    left: 1099px;
+}
+
+/* What we Offer */
+#we-offer {
+    background-color: #f2f2f2;
+    padding-top: 5%;
+}
+
+#we-offer .content {
+    width: 100%;
+    text-align: center;
+}
+
+#we-offer .content .full-service {
+    width: 60%;
+    margin-left: 20%;
+    font-weight: 800;
+}
+
+#we-offer .content .we-offer-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    justify-content: center;
+}
+
+#we-offer .content .we-offer-cards .card {
+    background-color: white;
+    height: 150px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#we-offer .content .learn {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 5px;
+}
+/* Get in Touch */
+
+#get-in-touch {
+    height: 70vh;
+    width: 100%;
+}
+
+#get-in-touch .first-row {
+    height: 75%;
+    width: 100%;
+    display: flex;
+}
+
+#get-in-touch .first-row .left-car {
+    width: 50%;
+    height: 100%;
+    background-image: url(./Image/Image\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#get-in-touch .first-row .left-car .related-query {
+    height: 100%;
+    width: 70%;
+    background-color: rgba(255, 100, 51, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+}
+
+#get-in-touch .first-row .right-car {
+    width: 50%;
+    height: 100%;
+    background-image: url(./Image/right\ car.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#get-in-touch .first-row .left-car .related-query .content .btns {
+    background-color: black;
+}
+
+#get-in-touch .second-row {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#get-in-touch .second-row .container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#get-in-touch .second-row .container h1 {
+    color: rgba(102, 28, 231, 1);
+}
+ /* footer backgropound
+.footer-bgcc {
+    background-color: black;
+} */
+

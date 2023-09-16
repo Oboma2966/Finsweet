@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/5f616d084a.js" crossorigin="anonymous"></script>
+
     <title>Finsweet</title>
 </head>
 <body>
@@ -21,7 +27,8 @@
             </ul>
             <div class="right-assist">
                 <div class="right-assist-icon">
-                    <img src="./Image/Assistance Icon.png" alt="contact-icon" width="30px">
+                    <!-- <img src="./Image/Assistance Icon.png" alt="contact-icon" width="30px"> -->
+                    <i class="fa-solid fa-phone" style="color: #fff;"></i>
                 </div>
                 <div class="right-assist-text">
                     <p>Road Assistance</p>
@@ -30,9 +37,9 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="parent-flex">
         <div class="container">
-            <div class="left-text">
+            <div class="left-text left">
                <div class="left-content">
                  <h1>Get your vehicle service done online at one place</h1>
                </div>
@@ -47,7 +54,7 @@
                 </div>
                </div>
             </div>
-            <div class="right-image">
+            <div class="right-image right">
                 <img src="./Image/Service.png" 
                 alt="Service" 
                 width="70%" 
@@ -59,5 +66,195 @@
             </div>
         </div>
     </main>
+    <section id="service-section" class="car-service parent-flex">
+        <div class="container">
+            <div class="left">
+                <h1>We are taking Car Servicing Seriously</h1>
+                <div class="left-service">
+                    <div class="left-left-service">
+                        <i class="fa-solid fa-gear" style="color: #030407;"></i>
+                    </div>
+                    <div class="left-right-service">
+                        <h4>Convenient Service</h4>
+                        <p>Through True Rich Attended does no end it his mother since real had half every him.</p>
+                    </div>
+                </div>
+                <div class="left-service">
+                    <div class="left-left-service">
+                        <i class="fa-solid fa-user-nurse"></i>
+                    </div>
+                    <div class="left-right-service">
+                        <h4>Expert Mechanics</h4>
+                        <p>Through True Rich Attended does no end it his mother since real had half every him.</p>
+                    </div>
+                </div>
+                <div class="left-service">
+                    <div class="left-left-service">
+                        <i class="fa-solid fa-dollar-sign" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="left-right-service">
+                        <h4>Transparent pricing</h4>
+                        <p>Through True Rich Attended does no end it his mother since real had half every him.</p>
+                    </div>
+                </div>
+                <div class="left-service">
+                    <a href="" class="know-more-service">
+                        <h6>Know more about us</h6>
+                        <img src="./Image/Arrow.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="right">
+                <h1>Get a quote for the car service</h1>
+                <div class="right-form">
+                    <form>
+                        <label for=""></label>
+                        <select name="" id="location">
+                            <option value="location">Enter your location</option>
+                        </select>
+                        <label for=""></label>
+                        <select name="" id="">
+                            <option value="location">Enter your location</option>
+                        </select>
+                        <label for=""></label>
+                        <select name="" id="">
+                            <option value="location">Enter youyr location</option>
+                        </select>
+                        <label for=""></label>
+                        <select name="" id="">
+                            <option value="phone">Your phone number</option>
+                        </select>
+                        <button class="btn">Get your quote</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="quote-section" class="parent-flex">
+        <div class="container">
+            <div class="left">
+                <div class="left-left-quote-section">
+                    <h1>We follow a clear process to help you out.</h1>
+                    <p>Through True Rich Attended does no end it his mother since real had half every him case in packages enquire</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="quote-section">
+                    <div class="right-left-quote-section-one">
+                        <img src="./Image/Group 9129.png" alt="" class="number-image">
+                    </div>
+                    <div class="right-right-quote-section">
+                        <h3>Get a Quote</h3>
+                        <p>Through True Rich Attended does no end it his mother since real had half every.</p>
+                    </div>
+                </div>
+                <br />
+                <div class="quote-section">
+                    <div class="right-left-quote-section-two">
+                        <img src="./Image/Group 9130.png" alt="" class="number-image">
+                    </div>
+                    <div class="right-right-quote-section">
+                        <h3>Book an Appointment</h3>
+                        <p>Through True Rich Attended does no end it his mother since real had half every.</p>
+                    </div>
+                </div>
+                <br />
+                <div class="quote-section">
+                    <div class="right-left-quote-section-three">
+                        <img src="./Image/Group 9131.png" alt="" class="number-image">
+                    </div>
+                    <div class="right-right-quote-section">
+                        <h3>Get your Service Done</h3>
+                        <p>Through True Rich Attended does no end it his mother since real had half every.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="we-offer" class="parent-flex">
+        <div class="container">
+            <div class="content">
+                <h5>What we offer</h5>
+                <h1 class="full-service">We Offer full service auto repair & maintenance </h1>
+                <div class="we-offer-cards">
+                    <div class="card">
+                        <i class="fa-solid fa-taxi" style="color: #000000;"></i>
+                        <h5>Diagnostics</h5>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-snowflake" style="color: #000000;"></i>
+                        <h5>Engine Repair</h5>
+                    </div>
+                    <div class="card" style="background-color: rgba(255, 100, 51, 1);">
+                        <i class="fa-brands fa-empire" style="color: #000000;"></i>
+                        <h5>Wheel Repair</h5>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-oil-can" style="color: #000000;"></i>
+                        <h5>Oil Filter</h5>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-car-rear" style="color: #000000;"></i>
+                        <h5>Body Work</h5>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-car-battery" style="color: #000000;"></i>
+                        <h5>Batteries</h5>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-car-burst" style="color: #000000;"></i>
+                        <h5>Insurance Claim</h5>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-gear" style="color: #000000;"></i>
+                        <h5>Custom Service</h5>
+                    </div>
+                </div>
+                <div class="learn">
+                    <h6>Learn about services</h6>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="get-in-touch" class="">
+            <div class="first-row">
+                <div class="left-car">
+                    <div class="related-query">
+                        <div class="content">
+                            <h2>Get in touch with us for your seervice related query</h2>
+                            <button class="btns">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-car"></div>
+            </div>
+            <div class="second-row">
+                <div class="container">
+                    <div class="one">
+                        <h1>20+</h1>
+                        <p>Profesional</p>
+                    </div>
+                    <div class="two">
+                        <h1>10+</h1>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="three">
+                        <h1>12K+</h1>
+                        <p>Service Closed</p>
+                    </div>
+                    <div class="four">
+                        <h1>100%</h1>
+                        <p>Customer Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <footer class="parent-flex footer-bgcc">
+        <div class="container"></div>
+    </footer> -->
 </body>
 </html>
