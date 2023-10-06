@@ -67,7 +67,7 @@ nav .right-assist .righ-assist-text p {
 /* global styling */
 
 .parent-flex {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     margin: auto;
     display: flex;
@@ -77,7 +77,7 @@ nav .right-assist .righ-assist-text p {
 }
 
 .container {
-    height: 80%;
+    min-height: 80%;
     width: 80%;
     display: flex;
 }
@@ -94,7 +94,7 @@ nav .right-assist .righ-assist-text p {
 
 .right {
     width: 50%;
-    height: 100%; 
+    min-height: 100%; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,7 +122,7 @@ main .container .left-text h1 {
     left: 320px;
     right: 0;
     height: 250px;
-    font-size: 55px;
+    font-size: 54.6px;
 }
 
 button {
@@ -145,13 +145,11 @@ button {
 
 button:hover {
     background-color: #a82a04;
-    border-radius: 35%;
+    /* border-radius: 35%; */
     transform: scale(0.8);
 }
 
 main .container .right-image {
-    /* width: 50%;
-    height: 100%;     */
     background-image: url(./Image/Image.png);
     background-position: center;
     background-size: cover;
@@ -192,7 +190,6 @@ main .container .right-image .rating {
     font-size: 16px;
     line-height: 24px;
     color: rgba(147, 145, 145, 1);
-    /* width: 93px; */
 }
 
 /* car servicing  section */
@@ -203,6 +200,12 @@ main .container .right-image .rating {
 .left-service {
     display: flex;
     justify-content: space-between;
+}
+
+.left-left-service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .left-service .left-right-service p {
@@ -217,34 +220,31 @@ main .container .right-image .rating {
     gap: 10px;
 }
 
-.fa-gear {
+.fa-class {
     background-color: white;
-    width: 30px;
-    height: 30px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 8px;
 }
 
-.fa-user-nurse {
+.fa-class-2 {
     background-color: white;
-    width: 30px;
-    height: 30px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 8px 10px;
 }
 
-.fa-dollar-sign {
-    background-color: black;
-    width: 30px;
-    height: 30px;
+.fa-class-3 {
+    background-color: white;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 8px 12px;
 }
 
 /* Form section */
@@ -270,6 +270,7 @@ button .btn {
     border: none;
     background-color:rgba(255, 100, 51, 1);
     color: white;
+    margin-top: 10%;
 }
 
 /* Quote Section */
@@ -289,9 +290,24 @@ button .btn {
     line-height: 28px;
 }
 
+#quote-section .container .right .quote-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.right-left-quote-section-one{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .right-right-quote-section p {
-    margin-right: 40px;
+    margin-left: 22px;
     font-size: 16px;
+    border-left: red dotted 1px;
+    padding-left: 35px;
 }
 
 .quote-section {
@@ -346,6 +362,7 @@ button .btn {
     display: flex;
     justify-content: flex-end;
     column-gap: 5px;
+    margin-top: 5%;
 }
 /* Get in Touch */
 
@@ -413,8 +430,500 @@ button .btn {
 #get-in-touch .second-row .container h1 {
     color: rgba(102, 28, 231, 1);
 }
- /* footer backgropound
-.footer-bgcc {
-    background-color: black;
-} */
 
+/* Brands we Serve */
+
+#Brands {
+    background-color: teal;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;                              
+    align-items: center;
+}
+
+#Brands .containers {
+    background-color: red;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/* for moile */
+@media screen and (max-width: 400px) {
+    header {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+    right: 0;
+    }
+    
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        column-gap: 20px;
+        border: none;
+    }
+
+    nav ul li {
+        font-size: 14px;
+    } 
+
+    nav .right-assist .right-assist-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    nav .right-assist .right-assist-icon .icon {
+        font-size: 12px;
+    }
+
+    main {
+        padding-top: 43%;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 10px; 
+        height: auto;
+    }
+
+    .parent-flex {
+        height: auto;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    main .container .left-text h1 {
+        text-align: center;
+        width: 100%;
+        font-size: 45px;
+    }
+
+    main .container .left-text .left-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .container .right-image {
+        height: 50vh;
+    }
+
+    main .container .right-image .rating {
+        right: 15%;
+    }
+
+    main .container .right-image .service {
+        display: none;
+    }
+    
+    .right .right-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-left-quote-section {
+        text-align: center;
+    }
+
+    .left-left-quote-section h1 {
+        width: 100%;
+        font-size: 45px;
+        line-height: 100%;
+    }
+
+    #we-offer .content .we-offer-cards .card {
+        height: 100px;
+        width: 100px;
+    }
+
+    /* get in touch */
+
+    #get-in-touch {
+        height: auto;
+    }
+
+    #get-in-touch .first-row {
+        flex-direction: column;
+    }
+
+    #get-in-touch .first-row .left-car {
+        width: 100%;
+    }
+
+    #get-in-touch .first-row .left-car .related-query {
+        padding: 20px;
+    }
+
+    #get-in-touch .first-row .right-car {
+        width: 100%;
+        height: 25vh;
+    }
+
+    #get-in-touch .second-row {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #get-in-touch .second-row .container {
+        width: 100%;
+     
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: auto;
+        text-align: center;
+    }
+
+
+    #get-in-touch .second-row .container h1{
+        font-size: 40px;
+    }
+}
+
+/* for tablet */
+ @media screen and (min-width: 401px) and (max-width: 800px) {
+    header{
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: static;
+        }
+        
+        header h1 {
+            font-size: 35px;
+        }
+    
+        nav {
+            flex-direction: column;
+            margin-left: 15%;
+        }
+    
+        nav ul {
+            column-gap: 30px;
+            border: none;
+            text-align: center;
+        }
+    
+        nav ul li {
+            font-size: 30px;
+        } 
+    
+        nav .right-assist .right-assist-icon {
+            width: 45px;
+            height: 45px;
+            font-size: 25px;
+        }
+    
+        nav .right-assist .right-assist-text {
+            font-size: 18px;
+        }
+
+        main {
+            position: relative;
+        }
+
+        .container {
+            flex-direction: column;
+            width: 100%;
+            padding: 0 10px; 
+            height: auto;
+        }
+    
+        .parent-flex {
+            height: auto;
+        }
+    
+        .left, .right {
+            width: 100%;
+        }
+
+        .write-up {
+            position: absolute;
+            z-index: 100;
+        }
+    
+        main .container .left-text h1 {
+            text-align: center;
+            width: 100%;
+            font-size: 60px;
+            color: white;
+        }
+    
+        main .container .left-text .left-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        main .container .right-image {
+            height: 80vh;
+        }
+    
+        main .container .right-image .rating {
+            right: -15%;
+        }
+
+        button {
+            width: 40%;
+            height: 30%;
+            margin-top: 15px;
+            border-radius: 10px;
+            padding: 26px 50px;
+            font-size: 30px;
+        }
+        
+        button:hover {
+            border-radius: 35%;
+            transform: scale(1.3);
+            border: none;
+        }
+
+        .service, .rating {
+            display: none;
+        }
+        
+        .time .time-text{
+            font-size: 25px;
+            color: whitesmoke;
+            width: 331px;
+        }
+        
+        .time .time-text .open {
+            font-size: 20px;
+            color: rgba(147, 145, 145, 1);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 45px;
+            /* color: red; */
+        }
+
+        .left-service .left-left-service {
+            padding: 35px 20px;
+        }
+
+        .left-service .left-right-service h4 {
+            font-size: 30px;
+        }
+        
+        .left-service .left-right-service p {
+            margin-right: 30px;
+            font-size: 22px;
+        }
+        
+        .left-service .know-more-service {
+            margin-left: 14%;
+            gap: 13px;
+            font-size: 30px;
+        }
+
+        .left-service .know-more-service img {
+            width: 20%;
+        }
+
+        .fa-class, .fa-class-2, .fa-class-3 {
+            height: 60px;
+            width: 60px;
+        }
+
+        .right .right-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        select {
+            width: 80%;
+            height: 55px;
+            padding: 0 30px 0 15px;
+            margin-top: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: all ease-in-out 0.3s;
+        }
+
+        select:hover {
+            transform: scale(1.3);
+            width: 80%;
+            height: 60px;
+            font-size: 30px;
+        }
+        
+        .right .right-form .btn {
+            padding: 10px 30px;
+            border-radius: 15px;
+            border: none;
+            color: white;
+            margin-top: 10%;
+            height: 70px;
+            background-color: black;
+        }
+
+        /* Quote Section */
+
+        .left-left-quote-section {
+            width: 80%;
+            margin-left: 10%;
+            text-align: center;
+        }
+        
+        .left-left-quote-section h1 {
+            font-size: 50px;
+            font-style: italic;
+        }
+        
+        .left-left-quote-section p {
+            font-size: 26px;
+            line-height: 28px;
+        }
+
+        .left-left-quote-section .btn {
+            width: 50%;
+            margin-bottom: 10%;
+        }
+        
+        .right-left-quote-section-one{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 40px;
+        }
+        
+        .right-right-quote-section p {
+            margin-left: 22px;
+            font-size: 26px;
+            border-left: red dotted 2px;
+            padding-left: 35px;
+        }
+        
+        .number-image {
+            height: 52px;
+            width: 52px;
+        }
+
+        /* We Offer */
+        h5 {
+            font-size: 20px;
+        }
+
+        #we-offer .content .full-service {
+            width: 80%;
+            margin-left: 10%;
+            font-weight: 800;
+            /* background-color: red; */
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+        
+        #we-offer .content .we-offer-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+            justify-content: center;
+            height: 50vh;
+        }
+        
+        #we-offer .content .we-offer-cards .card {
+            background-color: white;
+            height: 200px;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #we-offer .content .learn {
+            display: flex;
+            justify-content: flex-end;
+            column-gap: 5px;
+            margin-top: 5%;
+            font-size: 25px;
+        }
+
+        /* Get in Touch */
+
+        #get-in-touch {
+            height: auto;
+        }
+    
+        #get-in-touch .first-row {
+            flex-direction: column;
+        }
+    
+        #get-in-touch .first-row .left-car {
+            width: 100%;
+            height: 30vh;
+        }
+    
+        #get-in-touch .first-row .left-car .related-query {
+            padding: 20px;
+            font-size: 30px;
+        }
+
+        #get-in-touch .first-row .left-car .related-query .content .btns {
+            width: 60%;
+            margin-left: 20%;
+        }
+    
+        #get-in-touch .first-row .right-car {
+            width: 100%;
+            height: 25vh;
+        }
+    
+        #get-in-touch .second-row {
+            height: auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #get-in-touch .second-row .container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            height: auto;
+            text-align: center;
+        }
+    
+    
+        #get-in-touch .second-row .container h1{
+            font-size: 45px;
+        }
+        
+ }
